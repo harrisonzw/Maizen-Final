@@ -11,4 +11,4 @@ Features of the App:
   *You can search for any food available in the FatSecret Online Food Database.
 
 
-![Login Screen](/images/login_screen.png)
+![Login Screen](https://github.com/harrisonzw/Maizen-Final//images/login_screen.png)
