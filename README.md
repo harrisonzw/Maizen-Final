@@ -10,3 +10,5 @@ Features of the App:
   -Food diary to keep track of calories in a day.
   *You can search for any food available in the FatSecret Online Food Database.
 
+
+![Login Screen](/images/login_screen.png)
