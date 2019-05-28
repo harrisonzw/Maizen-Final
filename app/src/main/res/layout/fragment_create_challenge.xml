@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/createAChallenge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cairo"
+        android:text="Create a Challenge!"
+        android:textAlignment="center"
+        android:textColor="@color/colorNavText"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5sp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/selectActivity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:fontFamily="@font/cairo"
+                android:text="Select an activity:"
+                android:textColor="@color/colorNavText"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <Spinner
+                android:id="@+id/activity_spinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:entries="@array/activities_options"
+                android:spinnerMode="dropdown" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/setDuration"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:fontFamily="@font/cairo"
+                android:text="Set duration (hours): "
+                android:textColor="@color/colorNavText"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <Spinner
+                android:id="@+id/duration_spinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:entries="@array/duration_options"
+                android:spinnerMode="dropdown" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/selectTimeOfDay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:fontFamily="@font/cairo"
+                android:text="Select a time of day:"
+                android:textColor="@color/colorNavText"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <Spinner
+                android:id="@+id/time_of_day_spinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:entries="@array/time_of_day_options"
+                android:spinnerMode="dropdown" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5sp">
+
+            <EditText
+                android:id="@+id/nameChallenge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cairo"
+                android:hint="Give a name for your challenge"
+                android:inputType="textShortMessage"
+                android:textColor="@color/colorNavText"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/SubmitButton"
+                style="@style/FirebaseUI.Button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorNavText"
+                android:fontFamily="@font/cairo"
+                android:onClick="createNewChallenge"
+                android:text="@string/Submit"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/browser_actions_bg_grey"
+                android:textSize="30sp"
+                android:textStyle="bold|italic" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</LinearLayout>

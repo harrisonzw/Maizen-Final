@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/challenges_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".42                                                                                       "
+            android:fontFamily="@font/cairo"
+            android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+            android:drawableTint="@color/colorNavText"
+            android:text="Bronze"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:textColor="@color/SaddleBrown"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".38"
+            android:fontFamily="@font/cairo"
+            android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+            android:drawableTint="@color/colorNavText"
+            android:text="Silver"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:textColor="@color/Silver"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".33"
+            android:fontFamily="@font/cairo"
+            android:paddingStart="20dp"
+            android:text="Gold"
+            android:textSize="24sp"
+            android:textColor="@color/Gold"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/challenge_grid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:alignmentMode="alignMargins"
+        android:columnCount="3"
+        android:columnOrderPreserved="false"
+        android:rowCount="4">
+
+        <!-- Row 1 -->
+        <!-- Column 1 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Challenge_Card0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:id="@+id/Maizen_Challenge0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/ic_early_bird_48dp"
+                android:drawableTint="@color/SaddleBrown"
+                android:fontFamily="@font/cairo"
+                android:text="Early Bird"
+                android:textAlignment="center"
+                android:textColor="@color/SaddleBrown"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Row 1 -->
+        <!-- Column 2 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Challenge_Card1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:id="@+id/Maizen_Challenge1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/ic_early_hawk_48dp"
+                android:drawableTint="@color/Silver"
+                android:fontFamily="@font/cairo"
+                android:text="Early Hawk"
+                android:textAlignment="center"
+                android:textColor="@color/Silver"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Row 1 -->
+        <!-- Column 3 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Challenge_Card2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:id="@+id/Maizen_Challenge2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/ic_early_eagle_48dp"
+                android:drawableTint="@color/Gold"
+                android:fontFamily="@font/cairo"
+                android:text="Early Eagle"
+                android:textAlignment="center"
+                android:textColor="@color/Gold"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Row 2 -->
+        <!-- Column 1 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Challenge_Card3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:id="@+id/Maizen_Challenge3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/ic_night_owl_48dp"
+                android:drawableTint="@color/SaddleBrown"
+                android:fontFamily="@font/cairo"
+                android:text="Night Owl"
+                android:textAlignment="center"
+                android:textColor="@color/SaddleBrown"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Row 2 -->
+        <!-- Column 2 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Challenge_Card4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:id="@+id/Maizen_Challenge4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/ic_night_hawk_48dp"
+                android:drawableTint="@color/Silver"
+                android:fontFamily="@font/cairo"
+                android:text="Night Hawk"
+                android:textAlignment="center"
+                android:textColor="@color/Silver"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Row 2 -->
+        <!-- Column 3 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Challenge_Card5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:id="@+id/Maizen_Challenge5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/ic_night_eagle_48dp"
+                android:drawableTint="@color/Gold"
+                android:fontFamily="@font/cairo"
+                android:text="Night Eagle"
+                android:textAlignment="center"
+                android:textColor="@color/Gold"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Row 3 -->
+        <!-- Column 1 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Challenge_Card6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:id="@+id/Maizen_Challenge6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/ic_fit_and_active_48dp"
+                android:drawableTint="@color/SaddleBrown"
+                android:fontFamily="@font/cairo"
+                android:text="Fit and Active"
+                android:textAlignment="center"
+                android:textColor="@color/SaddleBrown"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Row 3 -->
+        <!-- Column 2 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Challenge_Card7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:id="@+id/Maizen_Challenge7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/ic_athlete_48dp"
+                android:drawableTint="@color/Silver"
+                android:fontFamily="@font/cairo"
+                android:text="Athlete"
+                android:textAlignment="center"
+                android:textColor="@color/Silver"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Row 3 -->
+        <!-- Column 3 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Challenge_Card8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:id="@+id/Maizen_Challenge8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/ic_professional_48dp"
+                android:drawableTint="@color/Gold"
+                android:fontFamily="@font/cairo"
+                android:text="Professional"
+                android:textAlignment="center"
+                android:textColor="@color/Gold"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Row 4 -->
+        <!-- Column 1 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Challenge_Card9"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:id="@+id/Maizen_Challenge9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/ic_consistent_48dp"
+                android:drawableTint="@color/SaddleBrown"
+                android:fontFamily="@font/cairo"
+                android:text="Consistent"
+                android:textAlignment="center"
+                android:textColor="@color/SaddleBrown"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Row 4 -->
+        <!-- Column 2 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Challenge_Card10"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:id="@+id/Maizen_Challenge10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/ic_dedication_48dp"
+                android:drawableTint="@color/Silver"
+                android:fontFamily="@font/cairo"
+                android:text="Dedication"
+                android:textAlignment="center"
+                android:textColor="@color/Silver"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Row 4 -->
+        <!-- Column 3 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Challenge_Card11"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:id="@+id/Maizen_Challenge11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/ic_perserverance_48dp"
+                android:drawableTint="@color/Gold"
+                android:fontFamily="@font/cairo"
+                android:text="Perseverance"
+                android:textAlignment="center"
+                android:textColor="@color/Gold"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+
+</LinearLayout>
