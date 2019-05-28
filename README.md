@@ -1,7 +1,7 @@
 # Maizen-Final
 This is the latest version of the calories and step counting android app Maizen.
 
-Feel free to clone this repository and run the app in Android Studio's Emulator.
+This app does not work currently because the backend used in user signin is not avaialbe on Microsoft Azure. Cloud serices cost money :( 
 
 Features of the App:
   -Step counting using gyroscope and accelerometer on the phone.
