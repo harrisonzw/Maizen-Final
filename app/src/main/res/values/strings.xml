@@ -36,7 +36,7 @@
     <string name="successful_login">Successfully Login</string>
     <string name="signout">Sign Out</string>
 
-    <string name="facebook_application_id">562386284275467</string>
+    <string name="facebook_application_id">"ADD FACEBOOK APP ID from FB developer console"</string>
     <string name="fb_login_protocol_scheme">fb562386284275467</string>
     <string name="title_activity_food_diary">Food_diary</string>
 
